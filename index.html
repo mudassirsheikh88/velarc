@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Velarc — Electric trucks for every long haul</title>
+  <meta name="description" content="Velarc builds premium battery-electric trucks, the charging network they run on and the software that keeps them moving. One platform, every mile." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@50..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= LOADER ================= -->
+<div class="loader" aria-hidden="true">
+  <canvas class="loader__map"></canvas>
+  <div class="loader__count"><span data-count-loader>00</span></div>
+  <div class="loader__meta mono"><span>Velarc</span><span>Charging the platform</span></div>
+</div>
+
+<div class="cursor" aria-hidden="true"><i></i></div>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" data-hdr>
+  <div class="hdr__bar mono">
+    <p>News: T-80 clears its 1,000,000 km durability run · Week 46</p>
+    <p class="hdr__bar-r"><a href="#charge">Charge map</a><span>|</span><a href="#fleet">Fleet portal</a></p>
+  </div>
+  <div class="hdr__row grid">
+    <a class="hdr__logo" href="#top" aria-label="Velarc home">
+      <svg class="logo-mark" viewBox="0 0 30 24" aria-hidden="true"><path d="M0 0h8l7 12.5L22 0h8L18 21h-6z" fill="currentColor"/><rect x="11" y="22" width="8" height="2" fill="#ff7a1a"/></svg>
+      <span class="logo-word">VELARC</span>
+    </a>
+    <nav class="hdr__nav mono" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#lineup">Lineup</a></li>
+        <li><a href="#charge">Charging</a></li>
+        <li><a href="#fleet">Fleet OS</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hdr__menu mono" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">→</span> <span data-menu-label>Menu</span></button>
+    <a class="pill pill--light hdr__cta mono" href="#contact">Reserve a truck</a>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="menu__inner grid">
+    <ul class="menu__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#lineup">Lineup</a></li>
+      <li><a href="#charge">Charging</a></li>
+      <li><a href="#fleet">Fleet OS</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu__side mono">
+      <p>Head office</p>
+      <p class="menu__big">Logistics District, Building 7<br/>Dubai, UAE</p>
+      <p>hello@velarc.example<br/>+971 4 000 0000</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" data-theme="dark">
+  <div class="hero__stick">
+    <div class="hero__stars" aria-hidden="true"></div>
+    <canvas class="hero__globe" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__content grid">
+      <div class="hero__text">
+        <p class="hero__eyebrow display">One platform</p>
+        <h1 class="display hero__title"><span class="ln"><span>Every mile</span></span><span class="ln"><span>runs on</span></span><span class="ln"><span>lightning</span></span></h1>
+        <p class="hero__sub">Electric trucks, megawatt charging and fleet software, built by one team and backed by one contract.</p>
+        <div class="hero__ctas">
+          <a class="pill pill--light mono" href="#contact">Reserve a truck</a>
+          <a class="pill pill--ghost mono" href="#lineup">Our lineup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section class="intro" id="about" data-theme="light">
+  <div class="intro__overlap" aria-hidden="true"></div>
+  <div class="intro__body grid">
+    <div class="intro__stickwrap">
+      <div class="intro__stick">
+        <figure class="intro__thumb" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="thg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b4048"/><stop offset="1" stop-color="#15171b"/></linearGradient></defs>
+            <rect width="320" height="200" fill="url(#thg)"/>
+            <g fill="none" stroke-linecap="round">
+              <path d="M-20 70 C 60 20 120 120 200 60 S 300 10 360 40" stroke="#0d0e10" stroke-width="30"/>
+              <path d="M-20 120 C 60 70 120 170 200 110 S 300 60 360 90" stroke="#0d0e10" stroke-width="30"/>
+              <path d="M-20 170 C 60 120 120 220 200 160 S 300 110 360 140" stroke="#0d0e10" stroke-width="30"/>
+              <path d="M-20 70 C 60 20 120 120 200 60 S 300 10 360 40M-20 120 C 60 70 120 170 200 110 S 300 60 360 90M-20 170 C 60 120 120 220 200 160 S 300 110 360 140" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="6 8"/>
+            </g>
+            <g class="thumb-cars"><circle cx="60" cy="55" r="3" fill="#ff7a1a"/><circle cx="150" cy="128" r="3" fill="#fff"/><circle cx="250" cy="122" r="3" fill="#ff7a1a"/><circle cx="110" cy="160" r="3" fill="#fff"/></g>
+          </svg>
+        </figure>
+        <h2 class="display intro__title" data-fill><span class="fade">We build trucks.</span><span class="fill">We own the charge.</span></h2>
+      </div>
+    </div>
+    <div class="intro__right">
+      <div class="intro__desc">
+        <p class="intro__lead" data-words>With the truck, the charger and the software under one roof and one accountable team, your fleet runs the way your business needs it to: predictably, transparently and without excuses.</p>
+        <p class="intro__lead" data-words>That means no finger-pointing between a manufacturer, a utility and a charging startup. Just one team, accountable from order to millionth kilometre.</p>
+        <a class="pill pill--outline mono" href="#lineup">Learn more about us</a>
+      </div>
+      <div class="intro__stats">
+        <p class="intro__statlabel">From a million test kilometres, clarity emerges</p>
+        <dl>
+          <div class="stat"><dt class="display"><span data-num="850">0</span><small>km</small></dt><dd>Real-world range, fully laden</dd></div>
+          <div class="stat"><dt class="display"><span data-num="99.4" data-dec="1">0</span><small>%</small></dt><dd>Fleet uptime across 2026 deliveries</dd></div>
+          <div class="stat"><dt class="display"><span data-num="32">0</span><small>min</small></dt><dd>10 to 80% on a megawatt bay</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY (pinned) ================= -->
+<section class="journey" id="lineup" data-theme="light" aria-label="From the yard to the road: how a Velarc truck works">
+  <div class="journey__stick">
+    <p class="journey__speed mono" aria-hidden="true"><span data-speed>00</span> km/h</p>
+    <div class="journey__giant display" aria-hidden="true"><span>Our lineup&nbsp;&nbsp;Our lineup&nbsp;&nbsp;</span></div>
+    <svg class="journey__side" aria-hidden="true"></svg>
+
+    <!-- services / lineup -->
+    <div class="svc" data-theme="dark">
+      <div class="svc__track">
+        <div class="svc__intro">
+          <h2 class="display"><span>Everything your</span><span>fleet needs.</span><span class="grey">Under one roof.</span></h2>
+        </div>
+        <p class="svc__desc">From the first route study to the millionth kilometre, we design the truck, install the charger and run the software that keeps it moving.<br/><br/>One partner, one point of contact and total visibility, from the depot to the open road.</p>
+        <article class="svc__card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 21h17V9H3zM20 13h5l4 5v3h-9z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="23" r="2.4" fill="currentColor"/><circle cx="24" cy="23" r="2.4" fill="currentColor"/></svg>
+          <h3 class="display">T-80<br/>Long haul</h3>
+          <p>The flagship tractor: 850 km laden range, sleeper cab and 1.2 MW charging.</p>
+        </article>
+        <article class="svc__card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 21h14V11H3zM17 14h6l5 4v3H17z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="23" r="2.4" fill="currentColor"/><circle cx="23" cy="23" r="2.4" fill="currentColor"/><path d="M8 7h8" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3 class="display">R-40<br/>Regional</h3>
+          <p>Day-cab tractor for hubs and port shuttles, 480 km per shift on depot charging.</p>
+        </article>
+        <article class="svc__card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="8" width="16" height="13" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 12h5l4 4v5h-9z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="23" r="2.4" fill="currentColor"/><circle cx="23" cy="23" r="2.4" fill="currentColor"/></svg>
+          <h3 class="display">M-16<br/>Urban</h3>
+          <p>A quiet rigid truck with a low-entry cab, built for night deliveries in city centres.</p>
+        </article>
+        <article class="svc__card" id="charge">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="4" width="13" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 9l-3 7h4l-2 6 5-8h-4l2-5z" fill="currentColor"/><path d="M20 14h4v8a2 2 0 004 0v-9" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3 class="display">Arc Bays<br/>Charging</h3>
+          <p>Megawatt chargers we install and maintain at your depot, plus a corridor every 250 km.</p>
+        </article>
+        <article class="svc__card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 18l5-5 4 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 27h10" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3 class="display">Fleet OS<br/>Software</h3>
+          <p>Live state of charge, charge planning and predictive maintenance in one dashboard.</p>
+        </article>
+        <article class="svc__card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20 4a6 6 0 00-5.6 8.2L4 22.6 9.4 28l10.4-10.4A6 6 0 0028 12l-4 1-3-3 1-4z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3 class="display">Service<br/>&amp; uptime</h3>
+          <p>Mobile technicians on every corridor and a guaranteed four-hour roadside response.</p>
+        </article>
+      </div>
+      <a class="pill pill--ghost mono svc__btn" href="#contact">Configure yours</a>
+    </div>
+
+    <!-- top-down road -->
+    <div class="road" id="fleet" data-theme="light">
+      <svg class="road__svg" aria-hidden="true"></svg>
+      <div class="road__left">
+        <h2 class="display road__title"><span class="grey">Reliability</span><span>at every</span><span>kilometre</span></h2>
+        <p class="road__para">Every Velarc leaves the factory with a service plan, a charging plan and a named fleet engineer. Predictable, transparent and without excuses.</p>
+      </div>
+      <div class="road__features">
+        <div class="feat">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29s9-8.4 9-15a9 9 0 10-18 0c0 6.6 9 15 9 15z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="14" r="3.2" fill="currentColor"/></svg>
+          <h3 class="display">Real-time<br/>fleet<br/>telemetry</h3>
+          <p>Every cell, motor and tyre reports live. Fleet OS flags issues days before a driver would feel them.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 16h24M16 4c4 4 4 20 0 24M16 4c-4 4-4 20 0 24" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3 class="display">Charging<br/>network<br/>coverage</h3>
+          <p>Depot bays plus a public corridor every 250 km, with slots the truck books for itself.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 18v-3a10 10 0 0120 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="18" width="5" height="8" rx="1.5" fill="currentColor"/><rect x="23" y="18" width="5" height="8" rx="1.5" fill="currentColor"/></svg>
+          <h3 class="display">24/7<br/>uptime<br/>desk</h3>
+          <p>Real engineers, always on. Whether it's a routine update or a roadside call, we pick up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY (pinned) ================= -->
+<section class="why" data-theme="dark" aria-labelledby="why-title">
+  <div class="why__stick">
+    <canvas class="why__bg" aria-hidden="true"></canvas>
+    <svg class="why__truck" viewBox="-60 -330 120 700" aria-hidden="true"></svg>
+    <h2 class="display why__title" id="why-title">Electric<br/>that works<br/>as hard as<br/>you do.</h2>
+    <ol class="why__feats">
+      <li class="wf wf--1"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 28c1-6 5-9 10-9s9 3 10 9" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><h3 class="display">One point of contact</h3><p>One team handles truck, charger, energy and service from order to delivery.</p></li>
+      <li class="wf wf--2"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16s5-9 14-9 14 9 14 9-5 9-14 9S2 16 2 16z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg><h3 class="display">Full fleet visibility</h3><p>See every truck, every charge and every kilometre in real time.</p></li>
+      <li class="wf wf--3"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 16l4 4 8-8" fill="none" stroke="currentColor" stroke-width="2"/></svg><h3 class="display">Range you can plan on</h3><p>Rated laden, at 45&nbsp;°C, with the air-con on. No brochure numbers.</p></li>
+      <li class="wf wf--4"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3v26M22 8h-8a4 4 0 000 8h4a4 4 0 010 8h-9" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><h3 class="display">Cost below diesel</h3><p>Fixed per-kilometre pricing that undercuts diesel from year one.</p></li>
+      <li class="wf wf--5"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 3L7 18h8l-2 11 11-15h-8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><h3 class="display">Fast issue resolution</h3><p>When something unexpected happens, we're on it before you call.</p></li>
+    </ol>
+    <div class="why__clouds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi" id="stories" data-theme="light" aria-labelledby="testi-title">
+  <div class="grid testi__head">
+    <h2 class="display testi__title" id="testi-title" data-fill><span class="fade">Trusted by fleets</span><span class="fill">across the Gulf</span></h2>
+    <p class="testi__aside">From port shuttles to cross-border long haul, our operators count on us every shift.</p>
+  </div>
+  <div class="testi__list">
+    <article class="tq grid">
+      <div class="tq__who"><div class="tq__pic"><img src="assets/people/layla.jpg" alt="Portrait of Layla Al-Amin" width="300" height="300" loading="lazy" /></div><p class="tq__name mono">Layla Al-Amin</p><p class="tq__role">Operations Director<br/>at Dunecrest Logistics</p></div>
+      <blockquote class="tq__text" data-words>We swapped forty diesels on our port shuttle for Velarc R-40s. Uptime went up, noise complaints went to zero, and our drivers started asking for extra shifts. The team installed the depot bays before the trucks even arrived, so day one was a normal working day, not a launch event.</blockquote>
+    </article>
+    <article class="tq grid">
+      <div class="tq__who"><div class="tq__pic"><img src="assets/people/marten.jpg" alt="Portrait of Marten Kroll" width="300" height="300" loading="lazy" /></div><p class="tq__name mono">Marten Kroll</p><p class="tq__role">Fleet Manager<br/>at Nordhaven Freight</p></div>
+      <blockquote class="tq__text" data-words>Range is exactly what they told us, in August, fully loaded, with the cab cooling on. That is the whole review. When a pack sensor flagged a fault in the desert, Fleet OS had already booked a technician at the next corridor stop before our driver noticed anything.</blockquote>
+    </article>
+    <article class="tq grid">
+      <div class="tq__who"><div class="tq__pic"><img src="assets/people/priya.jpg" alt="Portrait of Priya Raman" width="300" height="300" loading="lazy" /></div><p class="tq__name mono">Priya Raman</p><p class="tq__role">Chief Financial Officer<br/>at Southwind Cold Chain</p></div>
+      <blockquote class="tq__text" data-words>One contract instead of four suppliers. Our finance team noticed before our drivers did. The per-kilometre plan made the business case easy to approve, and two years in, it has come in under budget every single quarter.</blockquote>
+    </article>
+  </div>
+  <p class="grid testi__note mono">Portfolio concept · Velarc, its operators and quotes are fictional. Portraits are AI-generated faces of people who do not exist</p>
+</section>
+
+<!-- ================= PARTNERS ================= -->
+<section class="partners" data-theme="light" aria-label="Partners">
+  <div class="pgroup">
+    <div class="pgroup__head grid"><p>Our partners</p><p class="mono">Charging networks</p></div>
+    <ul class="pgrid">
+      <li><span class="plogo" style="--f:'Saira';--w:800">SUNFIELD</span></li>
+      <li><span class="plogo plogo--mono">corridor/grid</span></li>
+      <li><span class="plogo plogo--serif">Halcyon</span></li>
+      <li><span class="plogo" style="--w:500">VOLTARA ◆</span></li>
+      <li><span class="plogo plogo--mono">ARC·LINK</span></li>
+      <li><span class="plogo plogo--serif">Meridian</span></li>
+      <li><span class="plogo" style="--w:800">BRIGHTLINE</span></li>
+      <li><span class="plogo plogo--mono">ohm.road</span></li>
+      <li><span class="plogo" style="--w:600">PYLON&amp;CO</span></li>
+      <li><span class="plogo plogo--serif">Northwatt</span></li>
+    </ul>
+  </div>
+  <div class="pgroup">
+    <div class="pgroup__head grid"><p>Our partners</p><p class="mono">Energy &amp; ports</p></div>
+    <ul class="pgrid">
+      <li><span class="plogo" style="--w:800">ATLAS PORTS</span></li>
+      <li><span class="plogo plogo--serif">Qasr Energy</span></li>
+      <li><span class="plogo plogo--mono">TIDEWAY</span></li>
+      <li><span class="plogo" style="--w:500">SOLARIS ✦</span></li>
+      <li><span class="plogo plogo--serif">Dunefield</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= INSIGHTS ================= -->
+<div class="arch" data-theme="light" aria-hidden="true"></div>
+<section class="ins" id="insights" data-theme="dark" aria-labelledby="ins-title">
+  <div class="grid ins__head">
+    <h2 class="display ins__title" id="ins-title"><span class="grey">What's moving</span><span>in electric freight</span></h2>
+    <div class="ins__aside"><p>Stay ahead of the shifts in charging, regulation and fleet economics across the Gulf and beyond.</p><a class="pill pill--ghost mono" href="#insights">View all</a></div>
+  </div>
+  <div class="grid ins__body">
+    <ul class="ins__list">
+      <li><a href="#insights" data-thumb="0"><span class="mono">Nov 14, 2026</span><span>Megawatt charging standard gets final sign-off</span><span class="mono ins__tag">Global</span></a></li>
+      <li><a href="#insights" data-thumb="1"><span class="mono">Nov 06, 2026</span><span>Gulf corridor adds 42 bays between Dubai and Riyadh</span><span class="mono ins__tag">GCC</span></a></li>
+      <li><a href="#insights" data-thumb="2"><span class="mono">Oct 29, 2026</span><span>What a 45 °C summer really does to battery range</span><span class="mono ins__tag">Engineering</span></a></li>
+      <li><a href="#insights" data-thumb="3"><span class="mono">Oct 21, 2026</span><span>Port of Jebel Ali trials zero-emission yard shuttles</span><span class="mono ins__tag">Ports</span></a></li>
+      <li><a href="#insights" data-thumb="1"><span class="mono">Oct 09, 2026</span><span>Total cost of ownership: electric vs diesel, year three</span><span class="mono ins__tag">Finance</span></a></li>
+      <li><a href="#insights" data-thumb="0"><span class="mono">Sep 30, 2026</span><span>Fleet OS 4.0 brings predictive charge planning</span><span class="mono ins__tag">Product</span></a></li>
+    </ul>
+    <figure class="ins__thumb" aria-hidden="true"><svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice" data-ins-thumb></svg></figure>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" data-theme="light" aria-labelledby="faq-title">
+  <div class="grid faq__grid">
+    <div class="faq__left"><h2 class="display" id="faq-title">F.A.Q</h2><p>Straightforward answers, so you can move your fleet forward with confidence.</p></div>
+    <div class="faq__list">
+      <details><summary><span class="mono">01</span>What does Velarc do?<i></i></summary><p>We design and build battery-electric trucks, install and run the chargers they need, and operate the software that keeps a fleet moving, all under one contract.</p></details>
+      <details><summary><span class="mono">02</span>Which routes suit an electric truck?<i></i></summary><p>Port shuttles, hub-to-hub distribution and long haul up to 850 km between charges. We run a free route study on your real telematics before you commit.</p></details>
+      <details><summary><span class="mono">03</span>How long does charging take?<i></i></summary><p>About 32 minutes from 10 to 80% on a 1.2 MW Arc Bay, roughly a mandated driver break. Overnight depot charging fills a pack completely.</p></details>
+      <details><summary><span class="mono">04</span>Can I keep my existing trailers?<i></i></summary><p>Yes. T-80 and R-40 tractors use a standard fifth wheel and work with any compliant semi-trailer, reefers included.</p></details>
+      <details><summary><span class="mono">05</span>How is pricing calculated?<i></i></summary><p>Buy outright, lease, or choose a per-kilometre plan that bundles truck, energy, charging and service into one rate.</p></details>
+      <details><summary><span class="mono">06</span>What happens if a truck breaks down?<i></i></summary><p>Fleet OS alerts our uptime desk before the driver calls, and a technician or replacement tractor reaches you within four hours on every corridor we serve.</p></details>
+      <details><summary><span class="mono">07</span>How hot is too hot?<i></i></summary><p>Packs are liquid-cooled and validated at 55 °C ambient. Our range figures are rated at 45 °C with full cabin cooling.</p></details>
+      <details><summary><span class="mono">08</span>How do I reserve a truck?<i></i></summary><p>Leave your email below and a fleet engineer will set up a test drive and a route study. Current lead time for the T-80 is about 14 weeks.</p></details>
+    </div>
+    <div class="faq__right"><p>Still have questions? Our team is here to help.</p><a class="mono link-arrow" href="#contact">Email us ↗</a></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta" id="contact" data-theme="dark" aria-labelledby="cta-title">
+  <svg class="cta__rings" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <div class="cta__inner">
+    <h2 class="display" id="cta-title">Ready to<br/>drive<br/>electric?</h2>
+    <p>We're here to help your fleet go electric without hassle. No call centres, no runaround. Just experienced people ready to help.</p>
+    <form class="cta__form" novalidate>
+      <label class="sr-only" for="email">Work email</label>
+      <input id="email" type="email" placeholder="Work email" autocomplete="email" required />
+      <button class="pill pill--light mono" type="submit">Reserve a truck</button>
+      <span class="cta__msg mono" role="status" aria-live="polite"></span>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr" data-theme="light">
+  <div class="grid ftr__top">
+    <p class="ftr__tag">One platform.<br/>Every mile electric.</p>
+  </div>
+  <div class="grid ftr__cols">
+    <div class="ftr__social"><p class="mono ftr__h">Social</p><p class="ftr__icons"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="YouTube">yt</a></p></div>
+    <div><p class="mono ftr__h">Company</p><ul><li><a href="#about">About us</a></li><li><a href="#stories">Operators</a></li><li><a href="#insights">Insights</a></li><li><a href="#contact">Careers</a></li></ul></div>
+    <div><p class="mono ftr__h">Trucks</p><ul><li><a href="#lineup">T-80 Long haul</a></li><li><a href="#lineup">R-40 Regional</a></li><li><a href="#lineup">M-16 Urban</a></li></ul></div>
+    <div><p class="mono ftr__h">Platform</p><ul><li><a href="#charge">Arc Bays</a></li><li><a href="#fleet">Fleet OS</a></li><li><a href="#fleet">Service &amp; uptime</a></li></ul></div>
+    <div class="ftr__cert"><p class="mono ftr__h">Certified</p><p>Built and validated to UN ECE R100 and ISO 26262 functional-safety processes.</p><p class="ftr__badges mono"><span>R100</span><span>ISO 26262</span><span>ISO 14001</span></p></div>
+  </div>
+  <div class="ftr__marquee">
+    <div class="ftr__tabs mono" role="tablist"><button role="tab" aria-selected="true" data-tab="0">Industries</button><button role="tab" aria-selected="false" data-tab="1">Services</button></div>
+    <div class="ftr__mq"><div class="ftr__mq-track" data-mq></div></div>
+  </div>
+  <div class="grid ftr__info">
+    <figure class="ftr__img"><img src="assets/head-office.jpg" alt="Velarc head office and loading docks" width="800" height="450" loading="lazy" /></figure>
+    <div><p class="mono ftr__h">Head office</p><p>Logistics District, Building 7<br/>Dubai, United Arab Emirates</p><p class="ftr__sub mono">Operating markets</p><p>UAE · Saudi Arabia · Germany · Netherlands</p></div>
+    <div><p class="mono ftr__h">Email</p><p>hello@velarc.example</p><p class="mono ftr__h">Hotline</p><p>+971 4 000 0000</p><p class="mono ftr__h">Office hours</p><p>Sunday – Thursday · 8:00 – 18:00</p></div>
+    <canvas class="ftr__map" aria-hidden="true"></canvas>
+  </div>
+  <div class="grid ftr__legal mono"><p>© 2026 Velarc. All rights reserved.</p><p><a href="#top">Privacy</a><a href="#top">Terms</a><a href="#top">Cookie settings</a></p><p><a href="#top">Back to top ↑</a></p></div>
+  <canvas class="ftr__stipple" aria-hidden="true"></canvas>
+</footer>
+
+<script src="js/land.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
